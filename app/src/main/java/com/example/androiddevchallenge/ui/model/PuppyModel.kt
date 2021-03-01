@@ -24,12 +24,6 @@ import com.example.androiddevchallenge.data.PuppyData
 
 class PuppyModel : ViewModel() {
 
-    private val puppy = PuppyData(
-        R.drawable.puppy_kiki, "Kiki", "2020.01.01", true,
-        "Welsh Corgi Pembroke", "Guangzhou, China"
-    )
-
-
     val puppies = mutableStateOf(
         listOf(
             PuppyData(

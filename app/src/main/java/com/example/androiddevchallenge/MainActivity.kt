@@ -57,7 +57,9 @@ fun MyApp() {
     Surface(color = MaterialTheme.colors.background) {
         val model: PuppyModel = viewModel()
         PuppyList(puppies = model.puppies.value) {
-            model.tapedPuppy = it
+            if (model.tapedPuppy == null) {
+                model.tapedPuppy = it
+            }
         }
         if (model.tapedPuppy != null) {
             PuppyDetail(puppy = model.tapedPuppy!!)

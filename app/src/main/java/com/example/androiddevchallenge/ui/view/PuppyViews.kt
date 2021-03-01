@@ -56,12 +56,14 @@ fun PuppyList(puppies: List<PuppyData>, onPuppyClick: (PuppyData) -> Unit = {}) 
         verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
         items(puppies) { item: PuppyData ->
-            PuppyItem(item,
+            PuppyItem(
+                item,
                 Modifier
                     .clickable {
                         onPuppyClick(item)
                     }
-                    .fillMaxWidth())
+                    .fillMaxWidth()
+            )
         }
     }
 }

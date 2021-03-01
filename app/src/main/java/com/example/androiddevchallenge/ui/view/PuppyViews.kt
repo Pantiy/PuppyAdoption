@@ -125,13 +125,14 @@ fun PuppyDetail(puppy: PuppyData, modifier: Modifier = Modifier) {
                 text = puppy.location, style = MaterialTheme.typography.h5,
                 modifier = Modifier.absolutePadding(bottom = 20.dp)
             )
-            Button(onClick = {
-                Toast.makeText(
-                    context,
-                    "We will contact you soon.",
-                    Toast.LENGTH_SHORT
-                ).show()
-            }) {
+            Button(
+                onClick = {
+                    Toast.makeText(
+                        context,
+                        "We will contact you soon.",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }) {
                 Text(text = "I WANT ADOPT IT")
             }
         }

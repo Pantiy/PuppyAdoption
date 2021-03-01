@@ -22,11 +22,8 @@ val purple500 = Color(0xFF6200EE)
 val purple700 = Color(0xFF3700B3)
 val teal200 = Color(0xFF03DAC5)
 
-val ffFFFFFF = Color(0xffFFFFFF)
 
 val ffEFEFEF = Color(0xffEFEFEF)
 
 val ff333333 = Color(0xff333333)
-val ff666666 = Color(0xff666666)
-val ff999999 = Color(0xff999999)
 
